@@ -13,7 +13,7 @@ namespace TK
         private void Start()
         {
             //初期
-            _timeCount = 60.0f;
+            _timeCount = 62.0f;
         }
 
         // Update is called once per frame

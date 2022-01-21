@@ -109,14 +109,14 @@ namespace SD
         private void MoveAroundTxet()
         {
             _text.transform.position = _center;
-            _text.transform.localScale = new Vector3(2, 2, 1);
+            _text.transform.localScale = new Vector3(1.1f, 1.1f, 1.3f);
         }
 
         // デフォルトの位置に移動
         private void MovingPosition(float rate)
         {
             _text.transform.position = Vector3.Lerp(_center, _defualtPosition, rate);
-            _text.transform.localScale = Vector3.Lerp(new Vector3(2, 2, 1), new Vector3(0.75f, 0.75f, 1), rate);
+            _text.transform.localScale = Vector3.Lerp(new Vector3(1.1f, 1.1f, 1), new Vector3(0.3f, 0.3f, 1), rate);
         }
     }
 }

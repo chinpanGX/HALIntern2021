@@ -15,23 +15,42 @@ namespace TK
         {
             if (!isSelected)
             {
-                isSelected = false;
                 var target = GetComponent<Text>();
+                target.transform.DORestart();
+                target.transform.DOPause();
+                isSelected = false;
                 target.DOColor(Color.gray, 0.5f);
             }
             else
             {
-                isSelected = true;
                 var target = GetComponent<Text>();
+                transform.DOScale(0.2f, 0.5f)
+       .SetRelative(true)
+       .SetEase(Ease.OutQuart)
+       .SetLoops(-1, LoopType.Yoyo);
+                isSelected = true;
                 target.DOColor(Color.white, 0.5f);
             }
+        }
+
+        private void FixedUpdate()
+        {
+            if (isSelected)
+            {
+                
+            }
+            return;
         }
         public void SetSelected()
         {
             if (!isSelected)
             {
-                isSelected = true;
                 var target = GetComponent<Text>();
+                transform.DOScale(0.2f, 0.5f)
+       .SetRelative(true)
+       .SetEase(Ease.OutQuart)
+       .SetLoops(-1, LoopType.Yoyo);
+                isSelected = true;
                 target.DOColor(Color.white, 0.5f);
             }
         }
@@ -40,8 +59,10 @@ namespace TK
         {
             if (isSelected)
             {
-                isSelected = false;
                 var target = GetComponent<Text>();
+                target.transform.DORestart();
+                target.transform.DOPause();
+                isSelected = false;
                 target.DOColor(Color.gray, 0.5f);
             }
         }

@@ -16,6 +16,8 @@ TagManager:
   - Event_Quake
   - Event_Snow
   - Event_Meteo
+  - Beacon
+  - MiniMapCamea
   layers:
   - Default
   - TransparentFX
@@ -29,7 +31,7 @@ TagManager:
   - Broken
   - Ground
   - MiniMap
-  - 
+  - Building
   - 
   - 
   - 

@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/TM/Scene/Master_Title.unity
-    guid: fa4e73361392c2c45bb3225beafec953
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/TK/Scenes/Master_offlineRanking.unity
+    guid: d445cbcb0ecae6b45920744326cd1a96
   - enabled: 1
     path: Assets/Main/Scenes/Master/Master_Title.unity
     guid: 326eee179145ff84b8cab4c9ebd73a66

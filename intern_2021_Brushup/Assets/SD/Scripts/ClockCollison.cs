@@ -22,7 +22,7 @@ namespace SD
         void Start()
         {
             _gameManager = GameObject.Find("GameManager");
-            _se = GameObject.Find("SEManager").GetComponent<SE>();
+            _se = GameObject.FindWithTag("Manager_SEManager").GetComponent<SE>();
 
             _addTime = 10; // 10秒
         }

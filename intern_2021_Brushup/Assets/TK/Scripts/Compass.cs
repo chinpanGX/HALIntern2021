@@ -24,14 +24,14 @@ namespace TK
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Ground"))
+            if (other.CompareTag("GroundInitializer"))
             {
                 _isHitGround = true;
             }
         }
         private void OnTriggerExit(Collider other)
         {
-            if (other.CompareTag("Ground"))
+            if (other.CompareTag("GroundInitializer"))
             {
                 _isHitGround = false;
             }
