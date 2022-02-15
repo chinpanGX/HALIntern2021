@@ -44,8 +44,11 @@ namespace SD
             {
                 // 時間を加算する
                 _gameManager.GetComponent<TK.GameManager>().AddTime(_addTime);
-                // SEを鳴らす
-                _se.Play(6);
+                if (_se != null)
+                {
+                    // SEを鳴らす
+                    _se.Play(6);
+                }
                 // コライダーを削除
                 Destroy(this.gameObject);
             }

@@ -16,7 +16,7 @@ public class TItleVirtualCamera : MonoBehaviour
     void Update()
     {
         _time += Time.deltaTime;
-        if (_uiCtrl.GetTime() > 8.0f)
+        if (_uiCtrl.GetTime() > 4.0f)
         {
             this.gameObject.SetActive(false);
         }
